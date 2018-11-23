@@ -15,7 +15,7 @@
 
 .yellow, .green, .red, .blue {
     position: absolute;
-    }
+}
 
 .yellow {
     width: 300px;
@@ -26,6 +26,10 @@
     z-index: 4;
 }
 
+/*.yellow, .green, .red, .blue:hover {*/
+/*z-index: 10;*/
+/*box-shadow: 10px 10px 20px rgba(31, 45, 62, 0.88);*/
+/*}*/
 .yellow:hover {
     z-index: 10;
     box-shadow: 10px 10px 20px rgba(31, 45, 62, 0.88);
@@ -73,6 +77,7 @@
     z-index: 10;
     box-shadow: 10px 10px 20px rgba(31, 45, 62, 0.88);
 }
+
 .circle1, .circle2, .circle3, .circle4 {
     background-color: #2c3e50;
     width: 100px;
@@ -83,6 +88,20 @@
     bottom: 20px;
 
 }
+
+.circle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross {
+    position: relative;
+    width: 70px;
+    height: 70px;
+
+}
+
 .line1, .line2 {
     width: 7px;
     height: 95px;
@@ -96,12 +115,16 @@
 .line1 {
     transform: rotate(45deg);
     right: 40px;
+    top: -22px;
+    left: 32px;
     /*bottom: 5px;*/
 
 }
+
 .line2 {
     transform: rotate(-45deg);
-    left: 40px;
+    left: 31px;
+    top: -22px;
     /*bottom: 5px;*/
 
 }
